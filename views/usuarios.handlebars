@@ -1,0 +1,17 @@
+<h1>Lista de Usuários</h1>
+
+<ul>
+    {{{lista}}}
+</ul>
+
+<ul>
+  {{#each usuarios}}
+    <li>
+      {{nome}} - {{email}}
+
+      <a href="/usuarios/deletar/{{id}}">
+        Remover
+      </a>
+    </li>
+  {{/each}}
+</ul>

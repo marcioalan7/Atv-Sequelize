@@ -1,0 +1,41 @@
+<h1>Lista de Vídeos</h1>
+
+<div class="video">
+
+{{#each videos}}
+    <div class="card">
+        <img src="{{this.urlThumb}}" alt="{{this.titulo}}">
+
+        <h3>{{this.titulo}}</h3>
+
+        <p><strong>Criador:</strong> {{this.nomeCriador}}</p>
+
+        <p>
+            👁 {{this.qtdVisualizacoes}}
+        </p>
+
+        <p>
+            {{this.qtdCurtidas}}
+        </p>
+
+        <p>
+            {{this.hastagPrinc}}
+        </p>
+
+            <a href="/videos/editar/{{id}}">
+        Editar
+    </a>
+
+    <form
+        action="/videos/excluir/{{id}}"
+        method="POST"
+    >
+        <button type="submit">
+            Excluir
+        </button>
+    </form>
+
+    </div>
+{{/each}}
+
+</div>

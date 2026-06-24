@@ -1,0 +1,31 @@
+<h1>Cadastrar Vídeo</h1>
+
+<form action="/videos" method="POST">
+
+    <label>Título</label>
+    <input type="text" name="titulo" required>
+
+    <label>Criador</label>
+    <input type="text" name="criador" required>
+
+    <label>Descrição</label>
+    <textarea name="descricao" required></textarea>
+
+    <label>Visualizações</label>
+    <input type="number" name="visualizacoes" required>
+
+    <label>Curtidas</label>
+    <input type="number" name="curtidas" required>
+
+    <label>Hashtag</label>
+    <input type="text" name="hashtag" required>
+
+    <label>URL do Vídeo</label>
+    <input type="url" name="urlVideo" required>
+
+    <label>URL da Thumbnail</label>
+    <input type="url" name="thumbnail" required>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
